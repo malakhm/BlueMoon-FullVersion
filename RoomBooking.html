@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blue Moon-Home</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Major - 5* Hotel template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/restauants&bars.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="RoomBooking.css">
+
+
+<style>
+    section{
+        display: flexbox;
+      
+    }
+</style>
+</head>
+<body>
+    <section id="book-a-table" class="book-a-table">
+       
+
+        <form action="includes\RoomBooking.php" method="POST" role="form">
+            <h1>Book A Table</h1>
+
+            <div class="col-lg-4 col-md-6 form-group">
+                Enter your name: <input type="text" name="name" class="form-control" id="name" required placeholder="">
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group">
+                Enter your phone number<input type="text" name="phone" class="form-control" id="phone" required placeholder="+ddd dd-dd dd dd">
+            </div>
+
+            Select a room type: 
+            <div class="box">
+                <select name="roomtype" id="roomtype">
+                    <option name="cityscape" value="cityscape">Cityscape Room 150$ per night</option>
+                    <option name="grandfamily" value="grandfamily">Grand Family Room 300$ per night</option>
+                    <option name="costaldeluxe" value="coastaldeluxe">Coastal deluxe Room 250$ per night</option>
+                    <option name="classiccourtyard" value="cityscape">Classic Courtyard Room 350$ per night</option>
+                    <option name="royalsuite" value="royalsuite">Royal suite Room 500$ per night</option>
+                </select>
+            </div>
+         
+            <div class="col-lg-4 col-md-6 form-group">
+                check in: <input type="date" name="date1" class="form-control" id="date" required placeholder="Date">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+                check out: <input type="date" name="date2" class="form-control" id="date" required placeholder="Date">
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+                <input type="number" class="form-control" name="people" id="people" required placeholder="No. of people">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Notes..." ></textarea>
+          </div>
+
+
+          
+          </div>
+          
+          <button type="submit" class="button1" style="margin-bottom:50px;border-style:none;color:white;background-color:#637496;width: 186px;
+	height: 63px;text-align:center;">Submit</button>
+        </form>
+    </div>
+</section>
